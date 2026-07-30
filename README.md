@@ -86,7 +86,7 @@ Private configuration files are excluded from GitHub to prevent accidental expos
 
 # Installation
 
-# Requirements
+## Requirements
 
 Before using TermuxGPT, install:
 
@@ -97,11 +97,11 @@ Before using TermuxGPT, install:
 
 ---
 
-# Install Python Backend
+## Install Python Backend
 
 Clone the repository:
 
-```bash
+bash
 git clone https://github.com/yonukwasim520-cyber/TermuxGPT.git
 Enter the project folder:
 cd TermuxGPT
