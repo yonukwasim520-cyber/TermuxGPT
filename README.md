@@ -101,7 +101,6 @@ Before using TermuxGPT, install:
 
 Clone the repository:
 
-bash
 git clone https://github.com/yonukwasim520-cyber/TermuxGPT.git
 Enter the project folder:
 cd TermuxGPT
