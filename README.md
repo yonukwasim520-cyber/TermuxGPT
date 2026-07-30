@@ -110,55 +110,55 @@ Before using TermuxGPT, install:
 - python app.py
 - Install Android Application
 - Download the APK from the Releases section.
-Install the application on your Android device.
-Open the application and connect it with the TermuxGPT backend.
-First Run
-When starting TermuxGPT for the first time:
-Start the Python backend.
-Open the Android application.
-Enter your AI API key when requested.
-Start sending commands.
-Example:
-Send notification
-Turn on flashlight
-Vibrate the phone
-Automation Examples
-TermuxGPT can create event-based actions.
-Examples:
-When charging starts:
-Send notification
-When battery reaches 10%:
-Vibrate five times
-When a condition is triggered:
-Execute a plugin action
-Development
-Create your own plugin:
-Create a new file inside:
-plugins/
-Example:
-ACTION = "example"
-
-DESCRIPTION = "Example plugin"
-
-
-def run(command):
-    return "Plugin executed successfully"
-Restart TermuxGPT and the plugin will be loaded automatically.
-Project Vision
-TermuxGPT aims to become a customizable AI automation platform.
-The goal is to combine:
-Artificial intelligence
-Android control
-Python automation
-Modular plugins
-into one expandable assistant.
-The system is designed to grow like a platform where users can install new abilities instead of rebuilding the application.
-Future Plans
-Voice command support
-Visual plugin manager
-More Android integrations
-Advanced automation editor
-Local AI model support
-Community plugin ecosystem
-License
-Open-source project for learning, experimentation, and personal automation.
+- Install the application on your Android device.
+- Open the application and connect it with the TermuxGPT backend.
+- First Run
+- When starting TermuxGPT for the first time:
+- Start the Python backend.
+- Open the Android application.
+- Enter your AI API key when requested.
+- Start sending commands.
+- Example:
+- Send notification
+- Turn on flashlight
+- Vibrate the phone
+- Automation Examples
+- TermuxGPT can create event-based actions.
+- Examples:
+- When charging starts:
+- Send notification
+- When battery reaches 10%:
+- Vibrate five times
+- When a condition is triggered:
+- Execute a plugin action
+- Development
+- Create your own plugin:
+- Create a new file inside:
+- plugins/
+- Example:
+-   ACTION = "example"
+-
+- DESCRIPTION = "Example plugin"
+-
+-
+- def run(command):
+-     return "Plugin executed successfully"
+- Restart TermuxGPT and the plugin will be loaded automatically.
+- Project Vision
+- TermuxGPT aims to become a customizable AI automation platform.
+- The goal is to combine:
+- Artificial intelligence
+- Android control
+- Python automation
+- Modular plugins
+- into one expandable assistant.
+- The system is designed to grow like a platform where users can install new abilities instead of rebuilding the    -- application.
+- Future Plans
+- Voice command support
+- Visual plugin manager
+- More Android integrations
+- Advanced automation editor
+- Local AI model support
+- Community plugin ecosystem
+- License
+- Open-source project for learning, experimentation, and personal automation.
