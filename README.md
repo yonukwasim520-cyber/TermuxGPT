@@ -101,7 +101,8 @@ def run(command):
         "success": True,
         "message": "Plugin executed"
     }
-``Restart TermuxGPT.
+```python
+Restart TermuxGPT.
 The plugin loader will automatically detect the new plugin.
 Secure API Key System
 TermuxGPT does not store API keys inside the source code.
