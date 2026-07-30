@@ -141,10 +141,10 @@ The plugin manager will automatically detect the new plugin.
 
 TermuxGPT uses a secure first-time setup system.
 
-Upon running the tool, the first thing it will ask you to type API Key 
-But a word of advice: don't share this key with anyone.
-Just write the API Key It will be saved API Key automatic
-Simply running another tool also doesn't require writing anything API Key Manual operation is no longer required as the process has been automated
+- Upon running the tool, the first thing it will ask you to type API Key 
+- But a word of advice: don't share this key with anyone.
+- Just write the API Key It will be saved API Key automatic
+- Simply running another tool also doesn't require writing anything API Key Manual operation is no longer required as  the  process has been automated
 ---
 
 # Requirements
