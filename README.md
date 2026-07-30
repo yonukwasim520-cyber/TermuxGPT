@@ -219,26 +219,7 @@ The backend will start listening for commands from the Android application.
 ---
 
 # Building Android Application
-
-Open the Android project folder:
-
-```
-cd TermuxGPT-App
-```
-
-Build the APK:
-
-```
-gradle :app:assembleDebug
-```
-
-The generated APK will be located at:
-
-```
-app/build/outputs/apk/debug/
-```
-
-Install the APK on your Android device.
+Download our app
 
 ---
 
