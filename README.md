@@ -219,7 +219,7 @@ The backend will start listening for commands from the Android application.
 ---
 
 # Download the app
-Download our app https://github.com/yonukwasim520-cyber/TermuxGPT/releases/download/v1.0.0/TermuxGPT-v1.0.0.apk
+[Download](https://github.com/yonukwasim520-cyber/TermuxGPT/releases/download/v1.0.0/TermuxGPT-v1.0.0.apk)
 ---
 
 # First Usage
