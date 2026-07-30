@@ -1,0 +1,13 @@
+[
+    {
+        "trigger": {
+            "type": "charging",
+            "state": "connected"
+        },
+        "action": {
+            "name": "notification",
+            "title": "لا",
+            "message": "تم تنفيذ الإجراء"
+        }
+    }
+]

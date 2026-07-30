@@ -1,0 +1,14 @@
+.gradle/
+build/
+app/build/
+local.properties
+*.apk
+*.aab
+*.log
+.idea/
+*.iml
+
+# Secrets
+user_config.json
+config.py
+.env
