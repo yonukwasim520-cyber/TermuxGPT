@@ -86,7 +86,7 @@ Private configuration files are excluded from GitHub to prevent accidental expos
 
 # Installation
 
-## Requirements
+# Requirements
 
 Before using TermuxGPT, install:
 
@@ -97,7 +97,7 @@ Before using TermuxGPT, install:
 
 ---
 
-## Install Python Backend
+# Install Python Backend
 
 Clone the repository:
 
