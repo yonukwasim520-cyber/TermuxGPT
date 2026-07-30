@@ -1,3 +1,10 @@
+![Logo](logo.png)
+
+
+
+
+
+
 # TermuxGPT
 
 ## AI-Powered Modular Android Automation Assistant
