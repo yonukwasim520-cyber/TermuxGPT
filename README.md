@@ -141,31 +141,10 @@ The plugin manager will automatically detect the new plugin.
 
 TermuxGPT uses a secure first-time setup system.
 
-The API key is not stored inside the source code.
-
-When the application starts for the first time:
-
-1. The user enters the AI API key.
-2. The input is hidden while typing.
-3. The key is saved locally.
-4. Future launches load the saved key automatically.
-
-Configuration file:
-
-```
-user_config.json
-```
-
-Example:
-
-```
-{
-    "API_KEY": "YOUR_API_KEY"
-}
-```
-
-The configuration file should never be uploaded to GitHub.
-
+Upon running the tool, the first thing it will ask you to type API Key 
+But a word of advice: don't share this key with anyone.
+Just write the API Key It will be saved API Key automatic
+Simply running another tool also doesn't require writing anything API Key Manual operation is no longer required as the process has been automated
 ---
 
 # Requirements
