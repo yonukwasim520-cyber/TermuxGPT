@@ -99,17 +99,17 @@ Before using TermuxGPT, install:
 
 ## Install Python Backend
 
-Clone the repository:
+# Clone the repository:
 
-'''basb git clone https://github.com/yonukwasim520-cyber/TermuxGPT.git
-Enter the project folder:
-cd TermuxGPT
-Install dependencies:
-pip install -r requirements.txt
-Run the backend:
-python app.py
-Install Android Application
-Download the APK from the Releases section.
+- git clone https://github.com/yonukwasim520-cyber/TermuxGPT.git
+- Enter the project folder:
+- cd TermuxGPT
+- Install dependencies:
+- pip install -r requirements.txt
+- Run the backend:
+- python app.py
+- Install Android Application
+- Download the APK from the Releases section.
 Install the application on your Android device.
 Open the application and connect it with the TermuxGPT backend.
 First Run
