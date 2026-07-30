@@ -2,94 +2,122 @@
 
 ## AI-Powered Modular Android Automation Assistant
 
-TermuxGPT is an open-source AI-powered automation assistant that connects Android applications with a Python execution engine.
+TermuxGPT is an open-source AI automation assistant that combines an Android application with a Python-powered backend engine.
 
-The project is designed to transform natural language commands into real device actions through an intelligent command system, while keeping the architecture flexible through a powerful plugin system.
+The project allows users to control device features, create automations, and interact with artificial intelligence using simple natural language commands.
 
-Instead of creating a fixed automation application, TermuxGPT provides a platform where new abilities can be added like game mods.
-
-Users and developers can extend the assistant by creating new plugins without changing the core system.
+The main idea behind TermuxGPT is to create an expandable assistant platform where new features can be added through plugins, similar to installing mods in games.
 
 ---
 
-# Main Features
+# Features
 
-## AI Command Understanding
+## AI Command System
 
-TermuxGPT uses an AI engine to understand user requests and convert them into executable commands.
+TermuxGPT understands normal user requests and converts them into executable commands.
 
 Examples:
+
+```
 Turn on flashlight
+```
 
+```
 Send notification
+```
 
-Vibrate the phone 5 times
+```
+Vibrate the phone
+```
 
-The system analyzes the request, creates a structured command, then sends it to the correct action handler.
+The AI analyzes the request and sends it to the correct action module.
 
 ---
 
-# Android-Python Bridge
+# Project Architecture
 
-TermuxGPT uses a bridge architecture between Android and Python.
+TermuxGPT is divided into multiple parts:
 
-The Android application is responsible for:
+```
+Android Application
+        |
+        |
+    Bridge System
+        |
+        |
+ Python Automation Engine
+        |
+        |
+   Plugin Manager
+        |
+        |
+ Device Actions
+```
+
+## Android Application
+
+The Android app provides:
 
 - User interface
-- Displaying commands
-- Showing results
-- Communicating with the backend
+- Command input
+- Results display
+- Communication with the backend
 
+## Python Engine
 
-The Python engine is responsible for:
+The Python system handles:
 
-- AI processing
-- Command routing
-- Automation logic
+- AI communication
+- Command processing
+- Automation
 - Plugin execution
-
-
-Architecture:
-Android Application | | Bridge Layer | | Python Automation Engine | | Plugin System | | Device Features
 
 ---
 
 # Plugin System
 
-TermuxGPT contains a modular plugin system.
+TermuxGPT uses a modular plugin architecture.
 
-Plugins work similar to game mods.
+Plugins allow users to add new features without changing the main program.
 
-Each plugin can add new abilities:
+Example plugin folder:
 
-Examples:
-
-- Battery monitoring
-- Flashlight control
-- Vibration control
-- Notifications
-- Application management
-- Custom automation
-
-
-Plugin folder:
+```
 plugins/
+│
+├── battery.py
+├── flashlight.py
+├── vibrate.py
+└── custom_plugin.py
+```
 
-Example:
-plugins/ │ ├── battery.py ├── flashlight.py ├── vibrate.py └── my_plugin.py
+Each plugin provides:
+
+- Action name
+- Description
+- Execution function
 
 ---
 
-# Creating Your Own Plugin
+# Creating a Plugin
 
-Create a new Python file inside:
+Create a new file inside:
+
+```
 plugins/
+```
 
 Example:
 
-`plugins/example.py`
+File:
 
-```python
+```
+plugins/example.py
+```
+
+Code:
+
+```
 ACTION = "example"
 
 DESCRIPTION = "Example plugin"
@@ -102,75 +130,186 @@ def run(command):
         "message": "Plugin executed"
     }
 ```
+
 Restart TermuxGPT.
-The plugin loader will automatically detect the new plugin.
-Secure API Key System
-TermuxGPT does not store API keys inside the source code.
-On the first startup:
-The user is asked to enter the AI API key.
-The input is hidden while typing.
-The key is saved locally.
-Future launches automatically load the saved key.
+
+The plugin manager will automatically detect the new plugin.
+
+---
+
+# API Key Setup
+
+TermuxGPT uses a secure first-time setup system.
+
+The API key is not stored inside the source code.
+
+When the application starts for the first time:
+
+1. The user enters the AI API key.
+2. The input is hidden while typing.
+3. The key is saved locally.
+4. Future launches load the saved key automatically.
+
 Configuration file:
+
+```
 user_config.json
+```
+
 Example:
+
+```
 {
     "API_KEY": "YOUR_API_KEY"
 }
+```
+
 The configuration file should never be uploaded to GitHub.
-Requirements
-Android Application
-Required:
-Android 8 or newer
-Termux (for Python backend)
-Internet connection for AI requests
-Development Requirements
-Install:
-Python 3.10+
-Git
-Gradle
-Android SDK
+
+---
+
+# Requirements
+
+## Android Requirements
+
+- Android device
+- Android 8 or newer
+- Termux
+- Internet connection
+
+
+## Development Requirements
+
+Required tools:
+
+- Python 3.10+
+- Git
+- Gradle
+- Android SDK
+
+
 Python packages:
+
+```
 pip install -r requirements.txt
-Installation
-1. Clone Repository
+```
+
+---
+
+# Installation
+
+## Download Source Code
+
+Clone the repository:
+
+```
 git clone https://github.com/yonukwasim520-cyber/TermuxGPT.git
-Enter directory:
+```
+
+Open the folder:
+
+```
 cd TermuxGPT
-2. Install Python Backend
+```
+
+---
+
+# Running Python Backend
+
 Install dependencies:
+
+```
 pip install -r requirements.txt
-Start backend:
+```
+
+Start the backend:
+
+```
 python app.py
-3. Build Android Application
-Go to Android project folder:
+```
+
+The backend will start listening for commands from the Android application.
+
+---
+
+# Building Android Application
+
+Open the Android project folder:
+
+```
 cd TermuxGPT-App
-Build APK:
+```
+
+Build the APK:
+
+```
 gradle :app:assembleDebug
-The APK will be generated at:
+```
+
+The generated APK will be located at:
+
+```
 app/build/outputs/apk/debug/
-Install:
-app-debug.apk
-First Setup
-When starting TermuxGPT for the first time:
-Start the Python backend.
-Open the Android application.
-Enter your AI API key.
-Wait for connection.
-Start sending commands.
-Example Automation
+```
+
+Install the APK on your Android device.
+
+---
+
+# First Usage
+
+After installation:
+
+1. Start the Python backend.
+2. Open the Android application.
+3. Connect the application with the backend.
+4. Enter your AI API key.
+5. Start sending commands.
+
+Example:
+
+```
+Send notification
+```
+
+```
+Turn on flashlight
+```
+
+```
+Vibrate five times
+```
+
+---
+
+# Automation System
+
 TermuxGPT supports event-based automation.
+
 Examples:
+
+```
 When charging starts:
 Send notification
+```
+
+```
 When battery reaches 10%:
 Vibrate five times
-When a custom event happens:
-Execute plugin
-Project Structure
-TermuxGPT
+```
 
-│
+```
+When a custom event happens:
+Run plugin action
+```
+
+---
+
+# Folder Structure
+
+```
+TermuxGPT/
+
 ├── app.py
 ├── ai_router.py
 ├── automation.py
@@ -181,26 +320,36 @@ TermuxGPT
 │   ├── flashlight.py
 │   └── vibrate.py
 │
-├── TermuxGPT-App/
-│   └── Android Application
-│
-└── config files
-Development Philosophy
-TermuxGPT is designed around three principles:
-Modular
-New features can be added through plugins.
-Flexible
-The system is not limited to predefined commands.
-Expandable
-The assistant can grow into a complete personal automation platform.
-Future Features
-Planned:
-Voice commands
-Visual plugin manager
-Plugin marketplace
-More Android integrations
-Local AI model support
-Advanced automation editor
-Background service mode
-License
-Open-source project created for learning, development, and personal automation.
+└── TermuxGPT-App/
+    └── Android Project
+```
+
+---
+
+# Security
+
+TermuxGPT follows a safer design:
+
+- API keys are not included in source code.
+- Private configuration files are ignored.
+- User settings stay locally stored.
+- Plugin system separates features from the core engine.
+
+---
+
+# Future Plans
+
+Planned features:
+
+- Voice commands
+- Visual plugin manager
+- More Android integrations
+- Plugin marketplace
+- Advanced automation editor
+- Local AI model support
+
+---
+
+# License
+
+Open-source project for learning, development, and personal automation.
